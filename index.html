@@ -1,11 +1,705 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio personnel Ewan</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Yo</h1>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Ewan PENVEN" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ewan PENVEN">Ewan PENVEN</h1>
+
+          <p class="title">Développeur web</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Contact</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ewanpenven@gmail.com" class="contact-link">ewanpenven@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Date de naissance</p>
+
+              <time datetime="2004-01-24">24 Janvier 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localisation</p>
+
+              <address>Lorient, Brest, Lannion / France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul> -->
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>À propos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>CV</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="À propos">
+
+        <header>
+          <h2 class="h2 article-title">À propos</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Je suis <strong>Ewan PENVEN</strong>, alternant en troisième année de <strong>BUT Informatique</strong> à l'IUT de Lannion, 
+            je suis actuellement en <strong>alternance</strong> dans la <strong>Marine Nationale</strong> à Brest en tant que développeur d'application web.
+          </p>
+          <p>
+            Au cours de ma formation, j’ai eu l’opportunité de mener à bien des projets de A à Z. À partir d’un résumé des besoins d’un client, notre équipe a 
+            collaboré pour concevoir et développer une solution clé en main. Cela m’a permis de renforcer mes compétences dans plusieurs langages, notamment : 
+            <strong>Java, PHP (natif et avec Laravel), HTML, CSS, JavaScript, C</strong>, ainsi qu’en bases de données comme <strong>SQL et PostgreSQL</strong>.
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Ce que je fais</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Développement web</h4>
+
+                <p class="service-item-text">
+                  Développement de sites web (vitrine ou plus complexe) pour des particuliers / professionels.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Développement d'application web</h4>
+
+                <p class="service-item-text">
+                  Développement d'application web métier pour professionel.
+                </p>
+              </div>
+
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="CV">
+
+        <header>
+          <h2 class="h2 article-title">Mon CV</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Étude</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IUT Lannion</h4>
+
+              <span>2022 - En cours...</span>
+
+              <p class="timeline-text">
+                BUT Informatique en alternance, 3ème année.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lycée Jean Baptiste Colbert, Lorient</h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                Baccalauréat STI2D, option SIN (Systèmes d'information et numérique), mention Bien.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Développeur d'application métier</h4>
+
+              <span>2024 — En cours...</span>
+
+              <p class="timeline-text">
+                Alternance de 1 ans pour la Marine Nationale, en tant que développeur d'application web. <br>
+                Je réalise un site métier en utilisant HTML, CSS, JS, PHP, SQL.
+                Mon sujet par d'un cahier des charges, et je dois le réaliser de A à Z seul.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Développeur web</h4>
+
+              <span>2 mois</span>
+
+              <p class="timeline-text">
+                Stage de fin de deuxième année de BUT Informatique, pour la société Selltim. <br>
+                J'ai pu y réaliser plusieurs site web pour des clients, en utilisant Wordpress avec les langages HTML, CSS, PHP, JS, Tailwind.
+                J'ai aussi pu faire ainsi que découvrir le SEO et le SEA.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mes compétences</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Front (HTML CSS JS)</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Back (PHP)</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">BDD (SQL, POSTGRESQL)</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item"></li>
+
+              <div class="title-wrapper">
+                <h5 class="h5">Application (Java, C)</h5>
+                <data value="40">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section>
+            <a href="./assets/files/CV_Alternance_Ewan_PENVEN.pdf" target="_blank" class="cv">Mon CV</a>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Tous</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Sites web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Autres</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Tous</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Sites web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Autre</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+            
+            <li class="project-item active" data-filter-item data-category="sites web">
+              <a href="#" class="project-link" data-popup-target="popup1">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/api.png" alt="Sport Koh" loading="lazy">
+                </figure>
+                <h3 class="project-title">API en C</h3>
+                <p class="project-category">Autres</p>
+              </a>
+            </li>
+          
+            <li class="project-item active" data-filter-item data-category="sites web">
+              <a href="#" class="project-link" data-popup-target="popup2">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/alhaiz_breizh.png" alt="AlHaIz Breizh" loading="lazy">
+                </figure>
+                <h3 class="project-title">AlHaIz Breizh</h3>
+                <p class="project-category">Développement web</p>
+              </a>
+            </li>
+          
+            <li class="project-item active" data-filter-item data-category="sites web">
+              <a href="#" class="project-link" data-popup-target="popup3">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/marine.png" alt="Marine Nationale" loading="lazy">
+                </figure>
+                <h3 class="project-title">Marine Nationale</h3>
+                <p class="project-category">Développement application web</p>
+              </a>
+            </li>
+          
+            <li class="project-item active" data-filter-item data-category="sites web">
+              <a href="#" class="project-link" data-popup-target="popup4">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/JS_Pokemon.png" alt="Projet JS Pokemon" loading="lazy">
+                </figure>
+                <h3 class="project-title">Projet JS Pokemon</h3>
+                <p class="project-category">Application JS</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="autres">
+              <a href="#" class="project-link" data-popup-target="popup5">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/bella_italia.png" alt="Bella Italia" loading="lazy">
+                </figure>
+                <h3 class="project-title">Bella Italia</h3>
+                <p class="project-category">Maquette</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="autres">
+              <a href="#" class="project-link" data-popup-target="popup6">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/pdf.png" alt="PDF">
+                </figure>
+                <h3 class="project-title">Générateur de PDF</h3>
+                <p class="project-category">Autres</p>
+              </a>
+            </li>
+
+          </ul>
+          
+          <!-- Popup 1 -->
+          <div class="popup" id="popup1">
+            <div class="popup-content">
+              <span class="popup-close" data-popup-close>&times;</span>
+              <img src="./assets/images/api.png" alt="Sport Koh" class="popup-image">
+              <h3 class="popup-title">API en C</h3>
+              <p class="popup-description">
+                Ce projet était le premier que j'ai pu réaliser lors de mon BUT Informatique, il consistait à créer un site web pour une entreprise
+                de sport. Nous devions recueillir et analyser les besoins d'un client.
+                <br><br>
+                Consultez le dépôt GitHub ici : 
+                <a href="https://github.com/ZukaBri3k/API_AlhaizBreizh" target="_blank">API en C sur GitHub</a>
+              </p>
+            </div>
+          </div>
+          
+          <!-- Popup 2 -->
+          <div class="popup" id="popup2">
+            <div class="popup-content">
+              <span class="popup-close" data-popup-close>&times;</span>
+              <img src="./assets/images/alhaiz_breizh.png" alt="AlHaIz Breizh" class="popup-image">
+              <h3 class="popup-title">AlHaIz Breizh</h3>
+              <p class="popup-description">
+                Ce projet était le deuxième que j'ai pu réaliser lors de mon BUT Informatique, il consistait à créer un site web pour une fausse entreprise
+                style airbnb. Nous devions recueillir et analyser les besoins d'un client et réaliser un site web en utilisant Laravel.
+                Ce fus un grand projet a 6 personnes et qui a duré plus de 3 mois.
+                <br><br>
+                Consultez le dépôt GitHub ici : 
+                <a href="https://github.com/ZukaBri3k/AlhaizBreizh" target="_blank">AlHaIz Breizh sur GitHub</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Popup 3 -->
+          <div class="popup" id="popup3">
+            <div class="popup-content">
+              <span class="popup-close" data-popup-close>&times;</span>
+              <img src="./assets/images/marine.png" alt="AlHaIz Breizh" class="popup-image">
+              <h3 class="popup-title">Marine Nationale</h3>
+              <p class="popup-description">
+                Projet en PHP, HTML, CSS, JS et SQL que j'ai réaliser pour la Marine Nationale lors de mon alternance.
+                Le projet consiste en une application interne pour gérer certaines choses sur la base de l'Ile Longue à Brest.
+              </p>
+            </div>
+          </div>
+
+          <!-- Popup 4 -->
+          <div class="popup" id="popup4">
+            <div class="popup-content">
+              <span class="popup-close" data-popup-close>&times;</span>
+              <img src="./assets/images/JS_Pokemon-popup.png" alt="Projet Pokemon" class="popup-image">
+              <h3 class="popup-title">Projet Pokemon</h3>
+              <p class="popup-description">
+                Projet en JS que j'ai pu réaliser en 2ème année de BUT Informatique. Le projet consistait à réaliser un 
+                wiki sur les pokemons en utilisant une base de données en JSON. On devait les regrouper et créer plusieurs filtres / pages.
+                <br><br>
+                Consultez le dépôt GitHub ici : 
+                <a href="https://github.com/EwanP56/Projet_Pokemon" target="_blank">Projet Pokemon sur GitHub</a>
+              </p>
+            </div>
+          </div>
+          
+          <!-- Popup 5 -->
+          <div class="popup" id="popup5">
+            <div class="popup-content">
+              <span class="popup-close" data-popup-close>&times;</span>
+              <img src="./assets/images/bella_italia-popup.png" alt="Bella Italia" class="popup-image">
+              <h3 class="popup-title">Bella Italia</h3>
+              <p class="popup-description">
+                Bella Italia est un client qui nous (Mes amis et moi) a demandé une maquette pour son site web. 
+                J'ai donc réalisé une maquette pour lui montrer ce que cela pourrait donner.
+                Cependant ça n'a rien donner par la suite pour d'autres raisons.
+              </p>
+            </div>
+          </div>
+
+          <!-- Popup 6 -->
+          <div class="popup" id="popup6">
+            <div class="popup-content">
+              <span class="popup-close" data-popup-close>&times;</span>
+              <img src="./assets/images/pdf.png" alt="PDF" class="popup-image">
+              <h3 class="popup-title">PDF</h3>
+              <p class="popup-description">
+                Le Générateur de PDF est un projet que j'ai réaliser en groupe lors de ma première année de BUT Informatique en bash.
+                Le principe était de réaliser un site web qui permet de générer un PDF à partir de données d'un tableur et de générer un QR-Code afin de pouvoir
+                le télécharger sur téléphone.
+                
+                <br><br>
+                Consultez le dépôt GitHub ici : 
+                <a href="https://github.com/EwanP56/SAE1.03_Generateur_de_PDF" target="_blank">Générateur de PDF sur GitHub</a>
+              </p>
+            </div>
+          </div>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Mes contacts</h3>
+
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:ewanpenven@gmail.com" class="contact-link">ewanpenven@gmail.com</a>
+          </div>
+
+          <div class="contact-info">
+            <p class="contact-title">Téléphone</p>
+            <a href="tel:0782640601" class="contact-link">07 82 64 06 01 (France)</a>
+          </div>
+
+          <div class="contact-info"></div>
+            <p class="contact-title">Zone géographique</p>
+            <p class="contact-geo">Lorient, Brest, Hennebont, Lannion <strong>(France)</strong>.</p>
+          </div>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
