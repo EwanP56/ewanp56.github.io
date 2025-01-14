@@ -585,7 +585,7 @@
           <div class="popup" id="popup1">
             <div class="popup-content">
               <span class="popup-close" data-popup-close>&times;</span>
-              <img src="./assets/images/api.png" alt="Sport Koh" class="popup-image">
+              <img src="./assets/images/api.png" alt="Sport Koh" class="popup-image" onclick="enlargeImage(this)">
               <h3 class="popup-title">API en C</h3>
               <p class="popup-description">
                 Ce projet était le premier que j'ai pu réaliser lors de mon BUT Informatique, il consistait à créer un
@@ -608,29 +608,22 @@
           <div class="popup" id="popup2">
             <div class="popup-content">
               <span class="popup-close" data-popup-close>&times;</span>
-              <img src="./assets/images/alhaiz_breizh.png" alt="AlHaIz Breizh" class="popup-image">
+              <img src="./assets/images/alhaiz_breizh.png" alt="AlHaIz Breizh" class="popup-image" onclick="enlargeImage(this)">
               <h3 class="popup-title">AlHaIz Breizh</h3>
               <p class="popup-description">
-                Ce projet était le deuxième que j'ai pu réaliser lors de mon BUT Informatique, il consistait à créer un
-                site web pour une fausse entreprise
-                style airbnb. Nous devions recueillir et analyser les besoins d'un client et réaliser un site web en
-                utilisant Laravel.
-                Ce fus un grand projet a 6 personnes et qui a duré plus de 3 mois.
+                Ce projet était le deuxième que j'ai pu réaliser lors de mon BUT Informatique, il consistait à créer un site
+                web pour une fausse entreprise style Airbnb. Nous devions recueillir et analyser les besoins d'un client et
+                réaliser un site web en utilisant Laravel.
                 <br><br>
                 Consultez le dépôt GitHub ici :
                 <a href="https://github.com/ZukaBri3k/AlhaizBreizh" target="_blank">AlHaIz Breizh sur GitHub</a>
               </p>
               <div class="project-tags">
-                <span class="tag-popup"
-                  data-tooltip="Ce projet a été réalisé en groupe de 6 personnes.">Collaborer</span>
-                <span class="tag-popup"
-                  data-tooltip="Ce projet a été réalisé de A à Z, depuis l'analyse jusqu'à la mise en œuvre.">Réaliser</span>
-                <span class="tag-popup"
-                  data-tooltip="Une gestion claire et organisée du projet a été appliquée.">Gérer</span>
-                <span class="tag-popup"
-                  data-tooltip="Ce projet m'a permis de conduire un projet de groupe avec des méthodes de management ainsi que gérer une équipe avec une technologie nouvelle.">Conduire</span>
-                <span class="tag-popup"
-                  data-tooltip="Durant le projet on a dû administrer des données utilisateurs ainsi que gérer les données dans une grande base de données">Administrer</span>
+                <span class="tag-popup" data-tooltip="Ce projet a été réalisé en groupe de 6 personnes.">Collaborer</span>
+                <span class="tag-popup" data-tooltip="Ce projet a été réalisé de A à Z, depuis l'analyse jusqu'à la mise en œuvre.">Réaliser</span>
+                <span class="tag-popup" data-tooltip="Une gestion claire et organisée du projet a été appliquée.">Gérer</span>
+                <span class="tag-popup" data-tooltip="Ce projet m'a permis de conduire un projet de groupe avec des méthodes de management ainsi que gérer une équipe avec une technologie nouvelle.">Conduire</span>
+                <span class="tag-popup" data-tooltip="Durant le projet on a dû administrer des données utilisateurs ainsi que gérer les données dans une grande base de données">Administrer</span>
               </div>
             </div>
           </div>
@@ -659,7 +652,7 @@
           <div class="popup" id="popup4">
             <div class="popup-content">
               <span class="popup-close" data-popup-close>&times;</span>
-              <img src="./assets/images/JS_Pokemon-popup.png" alt="Projet Pokemon" class="popup-image">
+              <img src="./assets/images/JS_Pokemon-popup.png" alt="Projet Pokemon" class="popup-image" onclick="enlargeImage(this)">
               <h3 class="popup-title">Projet Pokemon</h3>
               <p class="popup-description">
                 Projet en JS que j'ai pu réaliser en 2ème année de BUT Informatique. Le projet consistait à réaliser un
@@ -682,7 +675,7 @@
           <div class="popup" id="popup5">
             <div class="popup-content">
               <span class="popup-close" data-popup-close>&times;</span>
-              <img src="./assets/images/bella_italia-popup.png" alt="Bella Italia" class="popup-image">
+              <img src="./assets/images/bella_italia-popup.png" alt="Bella Italia" class="popup-image" onclick="enlargeImage(this)">
               <h3 class="popup-title">Bella Italia</h3>
               <p class="popup-description">
                 Bella Italia est un client qui nous (Mes amis et moi) a demandé une maquette pour son site web.
@@ -696,6 +689,10 @@
                   data-tooltip="Ce projet a été réalisé en groupe de 3 personnes sans cadre scolaire.">Collaborer</span>
               </div>
             </div>
+          </div>
+          <!-- Image Enlargement Modal -->
+          <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+            <img class="image-modal-content" id="modalImage">
           </div>
 
           <!-- Popup 6 -->

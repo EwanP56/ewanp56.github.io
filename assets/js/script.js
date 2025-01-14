@@ -149,3 +149,15 @@ closeButtons.forEach(button => {
     popup.classList.remove('active');
   });
 });
+
+function enlargeImage(img) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+
+  modal.style.display = "flex";
+  modalImg.src = img.src;
+}
+
+function closeImageModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
